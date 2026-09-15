@@ -1,0 +1,92 @@
+.flex {
+    display: flex;
+}
+
+.bg-light-gray {
+    background-color: #121212;
+}
+
+.bg-gray {
+    background-color: #202020;
+}
+
+.invert {
+    filter: invert();
+}
+
+.b-r-50 {
+    border-radius: 50%;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-d {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 8px;
+}
+
+.b-redious {
+    border-radius: 9px;
+}
+
+.b-r-top {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.c-white {
+    color: white;
+}
+
+.text-nowrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scroll-bar-y {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.scroll-bar-x {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Gray thumb */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
