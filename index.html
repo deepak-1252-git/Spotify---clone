@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="utility.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,36 +20,54 @@
 
 <body>
     <nav>
-        <div class="nav flex items-center content-center bg-black">
-            <div class="logo flex content-center items-center">
-                <img id="menuBtn" class="invert" src="svg/logo.svg" alt="spotify">
-            </div>
-            <div class="home bg-gray flex content-center items-center b-r-50">
-                <img class="invert" src="svg/home.svg" alt="home">
-            </div>
-            <div class="search-box bg-gray flex">
-                <ul class="flex items-center ">
-                    <li><img class="search" src="svg/search.svg" alt="search"></li>
-                    <li>
-                        <h5 class="text-nowrap">What do you want to play?</h5>
-                    </li>
-                    <li><span class="devider"></span></li>
-                    <li><img class="browser" src="svg/browser.svg" alt="browser"></li>
-                </ul>
-            </div>
-            <div class="psd-list">
-                <button class="btn fonts">Premium</button>
-                <button class="btn fonts">Support</button>
-                <button class="btn fonts">Download</button>
-            </div>
-            <div class="devider-1"></div>
-            <div class="downloadapp flex items-center ">
-                <span><img class="download" src="svg/download.svg" alt="download"></span>
-                <span class="installapp">Install App</span>
-            </div>
-            <div class="up-in">
-                <button class="btn fonts-up-in">Sign up</button>
-                <button class="btn fonts-up-in in">Log in</button>
+        <div class="nav-container flex items-center content-center">
+            <div class="nav flex items-center content-center">
+                <div class="logo-home flex">
+                    <div class="logo flex content-center items-center">
+                        <img id="menuBtn" class="invert" src="svg/logo.svg" alt="spotify">
+                    </div>
+                    <div class="home-container flex items-center content-center">
+                        <div class="home bg-gray flex content-center items-center b-r-50">
+                            <img class="invert" src="svg/home.svg" alt="home">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-box-container flex items-center content-center">
+                    <div class="search-box bg-gray flex  items-center content-center">
+                        <div class="search-h5 flex items-center">
+                            <img class="search" src="svg/search.svg" alt="search">
+                            <input type="text" class="btn" placeholder="search to play?"></input>
+                        </div>
+                        <div class="devider-brows flex items-center">
+                            <span class="devider"></span>
+                            <img class="browser" src="svg/browser.svg" alt="browser">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="psd-list flex items-center  ">
+                    <div class="more-on"><img src="/svg/threelineIcon.svg" alt="more"></div>
+                    <div class="psd-list-container">
+                        <div class="psd-button flex items-center">
+                            <button class="btn fonts">Premium</button>
+                            <button class="btn fonts">Support</button>
+                            <button class="btn fonts">Download</button>
+                        </div>
+
+                        <div class="devider-1"></div>
+
+                        <div class="downloadapp flex items-center ">
+                            <img src="svg/download.svg" alt="download">
+                            <div class="installapp">Install App</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sign-log flex  items-center content-center  ">
+                    <button class="btn fonts-up-in">Sign up</button>
+                    <button class="btn fonts-up-in in flex items-center content-center">Log in</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -312,7 +331,7 @@
                                 <div class="volume-slider flex content-center items-center">
                                     <input id="volumeSeekbar" type="range" name="vol">
                                 </div>
-                                <img  id="volumeBtn" src="/svg/vol60.svg" alt="vol">
+                                <img id="volumeBtn" src="/svg/vol60.svg" alt="vol">
                             </div>
                             <div class="timebar flex content-center">
                                 <p id="currentsongtime">00:00 / 00:00</p>
